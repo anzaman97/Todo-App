@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="todo.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="background-image">
+  </div>
+
+  <div class="todo-container">
+
+    <div class="header">
+      <h1 class="title">TODO</h1>
+      <div class="toggle-btn">
+      </div>
+    </div>
+
+
+    <div class="type-todo">
+      <div class="circle"></div>
+      <input placeholder="Create a new todo..." class="input-element js-input-element">
+
+    </div>
+
+    <ul class=" todo-list">
+
+
+    </ul>
+
+    <div class="nav-bar">
+      <div class="left-nav-side">
+
+
+        <p> <span class="dynamic-num"></span> items left</p>
+      </div>
+      <div class="filter-row">
+        <label>
+          <input type="radio" name="filter" id="all" checked>
+          <span class="all-btn">All</span>
+        </label>
+
+        <label>
+          <input type="radio" name="filter" id="active">
+          <span class="active-btn">Active</span>
+        </label>
+
+        <label>
+          <input type="radio" name="filter" id="completed">
+          <span class="completed-btn">Completed</span>
+        </label>
+      </div>
+      <span class="clear-btn">clear completed</span>
+    </div>
+
+    <!-- Add dynamic number -->
+
+    <p class="drag-n-drop">Drag and drop to reorder list</p>
+  </div>
+
+  <script src="todo2.js"></script>
+
+</body>
+
+</html>
