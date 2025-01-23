@@ -33,7 +33,7 @@ const allBtn = document.querySelector('.all-btn');
 const activeBtn = document.querySelector('.active-btn');
 const completedBtn = document.querySelector('.completed-btn');
 const clearBtn = document.querySelector('.clear-btn');
-
+let todos = [];
 //check todos from local storage
 
 try {
@@ -50,6 +50,8 @@ try {
 renderTodoList();
 
 //new todo
+
+
 
 const addTodoItem = () => {
   if (input.value.trim() !== "") {
@@ -214,7 +216,7 @@ function renderFilteredTodoList(filteredTodos) {
   addDraggableEventListeners()
 }
 
-//TÄHÄN JÄITT½!!!
+
 
 function clearCompletedTodos() {
   todos = todos.filter((todo) => !todo.isComplete);
